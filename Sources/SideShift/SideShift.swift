@@ -51,7 +51,7 @@ public enum SideShift {
 
     /// Starts the SDK. Call once, as early in launch as you can.
     /// - Parameters:
-    ///   - appKey: The app's SDK key from SideShift (Integrations → SideShift App SDK → Tracking).
+    ///   - appKey: The app's SDK key from SideShift (Settings → Ads & Ecom → your app → Setup).
     ///   - endpoint: The SideShift origin. Leave the default unless SideShift gives you another.
     public static func configure(appKey: String, endpoint: URL = URL(string: "https://app.sideshift.app")!, options: Options = Options()) {
         let store = InstallStore()

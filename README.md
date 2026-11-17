@@ -40,7 +40,7 @@ your app what the SideShift Pixel does for a website.
 
 ## 1. Add your app in SideShift
 
-In SideShift, open **Integrations**, find **SideShift App SDK** and choose **Add App**. Paste your App Store link:
+In SideShift, open **Settings → Ads & Ecom**, find **SideShift App SDK** and choose **Add App**. Paste your App Store link:
 SideShift fills in the app name, App Store ID, bundle ID and website.
 
 SideShift then shows:
