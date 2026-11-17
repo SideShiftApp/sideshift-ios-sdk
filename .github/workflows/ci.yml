@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test and build
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit tests (macOS)
+        run: swift test
+      - name: Build for iOS Simulator
+        run: xcodebuild build -scheme SideShift -destination 'generic/platform=iOS Simulator' -quiet
